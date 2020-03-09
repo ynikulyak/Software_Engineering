@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+	<title>Movie</title>
+</head>
+<body>
+	<a href="/movie/new">Add another movie</a>
+	<br/>
+	<a href="/movie">View the list</a>
+	<br/>
+	<h2 th:inline="text">[[${movie.poster}]] added [[${movie.title}]] to the database.</h2>
+	
+	Movie: <span th:inline="text"> [[${movie.title}]] </span> <br />
+	Rating: <span th:inline="text"> [[${movie.rating}]] </span> <br />
+	Poster's name: <span th:inline="text"> [[${movie.poster}]] </span> <br />
+	
+</body>
+</html>

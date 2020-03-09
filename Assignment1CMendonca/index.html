@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Hello</title>
+</head>
+<body>
+<h2>Welcome to my movie database.</h2>
+<p th:inline="text">Hello [[${name}]].  Nice to see you.</p>
+<p th:inline="text">Current time is [[${time}]].</p>
+</body>
+</html>
