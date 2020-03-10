@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Person</title>
+</head>
+<body>
+	<h2 th:inline="text"> Hello</h2>
+	
+	Movie title: <span th:inline="text"> [[${movie.title}]]</span> <br />
+	Name of person who rate: <span th:inline="text"> [[${movie.name}]]</span> <br />
+	Movie rating: <span th:inline="text"> [[${movie.rating}]]</span> <br />
+	
+	
+</body>
+</html>
